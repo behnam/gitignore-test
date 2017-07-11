@@ -1,0 +1,27 @@
+# file in root
+file11
+/file12
+file13/
+file14/*
+file15/**
+
+# file in sub-dir
+file21
+/file22
+file23/
+file24/*
+file25/**
+
+# dir in root
+dir11
+/dir12
+dir13/
+dir14/*
+dir15/**
+
+# dir in sub-dir
+dir21
+/dir22
+dir23/
+dir24/*
+dir25/**

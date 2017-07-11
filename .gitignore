@@ -1,4 +1,4 @@
-# file in root
+### file in root
 
 # MATCH /file_root_1
 file_root_00
@@ -52,7 +52,8 @@ file_root_03/**
 **/file_root_33/**
 
 
-# file in sub-dir
+### file in sub-dir
+
 # MATCH /parent_dir/file_deep_1
 file_deep_00
 
@@ -105,7 +106,8 @@ file_deep_03/**
 **/file_deep_33/**
 
 
-# dir in root
+### dir in root
+
 # MATCH /dir_root_00
 dir_root_00
 
@@ -158,7 +160,8 @@ dir_root_03/**
 **/dir_root_33/**
 
 
-# dir in sub-dir
+### dir in sub-dir
+
 # MATCH /parent_dir/dir_deep_00
 dir_deep_00
 

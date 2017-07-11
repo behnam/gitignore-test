@@ -1,22 +1,22 @@
 #!/bin/sh
 set -ev
 
-mkdir "some_dir"
+mkdir "parent_dir"
 
 for x in `seq 1 5`; do
 
     # file in root
-    touch    "file1$x"
+    touch    "file_root_$x"
 
     # file in sub-dir
-    touch    "some_dir/file2$x"
+    touch    "parent_dir/file_deep_$x"
 
     # dir in root
-    mkdir -p "dir1$x/some_dir"
-    touch    "dir1$x/some_dir/file"
+    mkdir -p "dir_root_$x/child_dir"
+    touch    "dir_root_$x/child_dir/file_leaf"
 
     # dir in sub-dir
-    mkdir -p "some_dir/dir2$x/some_dir"
-    touch    "some_dir/dir2$x/some_dir/file"
+    mkdir -p "parent_dir/dir_deep_$x/child_dir"
+    touch    "parent_dir/dir_deep_$x/child_dir/file_leaf"
 
 done

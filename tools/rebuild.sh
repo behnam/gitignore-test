@@ -4,7 +4,7 @@ set -ev
 _DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 
-$_DIR/remove_files_and_dirs.sh
+$_DIR/delete_files_and_dirs.sh
 
 git add --all
 

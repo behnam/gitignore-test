@@ -1,27 +1,27 @@
 # file in root
-file11
-/file12
-file13/
-file14/*
-file15/**
+file_root_1
+/file_root_2
+file_root_3/
+file_root_4/*
+file_root_5/**
 
 # file in sub-dir
-file21
-/file22
-file23/
-file24/*
-file25/**
+file_deep_1
+/file_deep_2
+file_deep_3/
+file_deep_4/*
+file_deep_5/**
 
 # dir in root
-dir11
-/dir12
-dir13/
-dir14/*
-dir15/**
+dir_root_1
+/dir_root_2
+dir_root_3/
+dir_root_4/*
+dir_root_5/**
 
 # dir in sub-dir
-dir21
-/dir22
-dir23/
-dir24/*
-dir25/**
+dir_deep_1
+/dir_deep_2
+dir_deep_3/
+dir_deep_4/*
+dir_deep_5/**

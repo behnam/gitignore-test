@@ -1,23 +1,25 @@
 #!/bin/sh
 set -ev
 
-mkdir "file_parent_dir"
-mkdir "dir_parent_dir"
+mkdir "parent_dir"
 
-for x in `seq 1 5`; do
+for i in `seq 0 3`; do
+    for j in `seq 0 3`; do
+        num="$i$j"
 
-    # file in root
-    touch    "file_root_$x"
+        # file in root
+        touch    "file_root_$num"
 
-    # file in sub-dir
-    touch    "file_parent_dir/file_deep_$x"
+        # file in sub-dir
+        touch    "parent_dir/file_deep_$num"
 
-    # dir in root
-    mkdir -p "dir_root_$x/child_dir"
-    touch    "dir_root_$x/child_dir/file_leaf"
+        # dir in root
+        mkdir -p "dir_root_$num/child_dir"
+        touch    "dir_root_$num/child_dir/file_leaf"
 
-    # dir in sub-dir
-    mkdir -p "dir_parent_dir/dir_deep_$x/child_dir"
-    touch    "dir_parent_dir/dir_deep_$x/child_dir/file_leaf"
+        # dir in sub-dir
+        mkdir -p "parent_dir/dir_deep_$num/child_dir"
+        touch    "parent_dir/dir_deep_$num/child_dir/file_leaf"
 
+    done
 done
